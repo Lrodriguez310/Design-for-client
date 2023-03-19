@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="stylecontact.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Jen Nav Bar</title>
+
+	<link rel="icon" href="img/icon.png">
+</head>
+<body>
+
+
+	<ul class="menu">
+		<div class="toggle"><i class="fa fa-eye"></i></div>
+		<li style="--i:0;--clr:#ff2972"><a href="index.html"><i class="fa fa-home"></i></a></li>
+		<li style="--i:1;--clr:#fee800"><a href="#"><i class="fa fa-youtube"></i></a></li>
+		<li style="--i:2;--clr:#04fc43"><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li style="--i:3;--clr:#fe00f1"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		<li style="--i:4;--clr:#00b0fe"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+		<li style="--i:5;--clr:#fea600"><a href="#"><i class="fa fa-phone"></i></a></li>
+		<li style="--i:6;--clr:#a529ff"><a href="#"><i class="fa fa-instagram"></i></a></li>
+		<li style="--i:7;--clr:#01bdab"><a href="#"><i class="fa fa-envelope"></i></a></li>
+	</ul>
+	
+
+
+
+<script>
+	let toggle = document.querySelector('.toggle');
+	let menu = document.querySelector('.menu');
+	toggle.onclick =function(){
+		menu.classList.toggle('active');
+	}
+	
+</script>
+
+
+
+
+
+</body>
+</html>

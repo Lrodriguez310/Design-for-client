@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(img/b9.jpg);
+	background-position: 10% 40%;
+	background-size: cover;
+	position: relative;
+	color: white;
+	overflow-x: hidden;
+}
+.menu {
+	position: relative;
+	width: 280px;
+	height: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu li {
+	position: absolute;
+	left: 0;
+	list-style: none;
+	transition: 0.5s;
+	transform: rotate(0deg) translateX(110px);
+	transform-origin: 140px;
+	transition-delay: calc(0.1s * var(--i));
+}
+.menu.active li{
+	transform: rotate(calc(360deg / 8 * var(--i))) translateX(-50px);
+}
+.menu li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	color: var(--clr);
+	border: 2px solid var(--clr);
+	border-radius: 50%;
+	font-size: 2.8em;
+	transform: rotate(calc(360deg / 8 * var(--i))) translateX(0px);
+	transition: 1s;
+	text-decoration: none;
+	
+}
+.menu li a:hover {
+	transition: 0s;
+	background: var(--clr);
+	box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+	color: #333;
+}
+.menu .toggle {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	background: linear-gradient(135deg,salmon,white);
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 1000;
+	font-size: 2em;
+	transition: transform 1.25s;
+	font-size: 3em;
+}
+
+.menu .toggle:hover {
+	transition: 0s;
+	background: linear-gradient(135deg,green,white);
+	color: white;
+}
+
+
+
+.menu.active .toggle {
+	transform: rotate(315deg);
+}
+
+
+
+
+section img {
+	padding-left: 80px;
+}
+
+		
